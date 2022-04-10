@@ -9,7 +9,7 @@ const categories: Category[] = [];
 categoriesRoutes.post("/", (request, response) => {
   const { name, description } = request.body;
 
-  const category = new Category(name, description, new Date());
+  const category = new Category();
 
   Object.assign(category, {
     name,
