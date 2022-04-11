@@ -5,7 +5,7 @@ interface IRequest {
 
 class CreateSpecificationService {
   execute({ name, description }: IRequest): void {
-    console.log();
+    console.log(name, description);
   }
 }
 
