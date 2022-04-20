@@ -11,6 +11,8 @@ services:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=ignite
       - POSTGRES_DB=rentx
+    networks:
+      - my-network
     volumes:
       - pgdata:/data/postgres
 
@@ -24,12 +26,14 @@ services:
       - 9229:9229 #Você pode inserir essa porta tbm pra poder usar o debug
     volumes: 
       - .:/usr/app
-    links: 
-      - database
+    networks:
+      - my-network
     depends_on:
       - database
 
-
+networks:
+  my-network:
+    driver: bridge
 
 volumes:
   pgdata:
