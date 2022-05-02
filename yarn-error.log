@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add bcryptjs
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add jsonwebtoken
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\lucas\AppData\Local\Microsoft\WindowsApps;;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\AppData\Roaming\npm;C:\Users\lucas\.dotnet\tools;C:\Users\lucas\AppData\Local\Yarn\bin;C:\Program Files\Azure Data Studio\bin
@@ -29,6 +29,7 @@ npm manifest:
     "dependencies": {
       "@types/multer": "^1.4.7",
       "@types/swagger-ui-express": "^4.1.3",
+      "bcryptjs": "^2.4.3",
       "csv-parse": "^5.0.4",
       "express": "^4.17.3",
       "multer": "^1.4.4",
@@ -41,6 +42,7 @@ npm manifest:
       "uuid": "^8.3.2"
     },
     "devDependencies": {
+      "@types/bcryptjs": "^2.4.2",
       "@types/express": "^4.17.13",
       "@types/uuid": "^8.3.4",
       "@typescript-eslint/eslint-plugin": "^5.18.0",
@@ -119,6 +121,11 @@ Lockfile:
     version "1.2.3"
     resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#1185726610acc37317ddab11c3c7f9066966bd20"
     integrity sha512-O3uyB/JbkAEMZaP3YqyHH7TMnex7tWyCbCI4EfJdOCoN6HIhqdJBWTM6aCCiWQ/5f5wxjgU735QAIpJbjDvmzg==
+  
+  "@types/bcryptjs@^2.4.2":
+    version "2.4.2"
+    resolved "https://registry.yarnpkg.com/@types/bcryptjs/-/bcryptjs-2.4.2.tgz#e3530eac9dd136bfdfb0e43df2c4c5ce1f77dfae"
+    integrity sha512-LiMQ6EOPob/4yUL66SZzu6Yh77cbzJFYll+ZfaPiPPFswtIlA/Fs1MzdKYA7JApHU49zQTbJGX3PDmCpIdDBRQ==
   
   "@types/body-parser@*":
     version "1.19.2"
@@ -419,6 +426,11 @@ Lockfile:
     version "1.5.1"
     resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
     integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
+  
+  bcryptjs@^2.4.3:
+    version "2.4.3"
+    resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
+    integrity sha1-mrVie5PmBiH/fNrF2pczAn3x0Ms=
   
   binary-extensions@^2.0.0:
     version "2.2.0"
